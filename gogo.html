@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="img/favicon.png" type="image/favicon.png" sizes="50x50">
+    <link rel="stylesheet" href="gogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Gogo</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class="body">
+        <div class="header">
+            <section>
+                <div class="header-top">
+                    <div class="left">
+                        <div class="display-flex">
+                            <div class="logo">
+                                <img src="https://mgl.gogo.mn/newsn/v3/images/gogo-logo.345096b3.png" alt="">
+
+                                <div class="icon">
+                                    <span uk-icon="grid" class="uk-icon"><svg width="20" height="20" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg" data-svg="grid">
+                                            <rect x="2" y="2" width="3" height="3"></rect>
+                                            <rect x="8" y="2" width="3" height="3"></rect>
+                                            <rect x="14" y="2" width="3" height="3"></rect>
+                                            <rect x="2" y="8" width="3" height="3"></rect>
+                                            <rect x="8" y="8" width="3" height="3"></rect>
+                                            <rect x="14" y="8" width="3" height="3"></rect>
+                                            <rect x="2" y="14" width="3" height="3"></rect>
+                                            <rect x="8" y="14" width="3" height="3"></rect>
+                                            <rect x="14" y="14" width="3" height="3"></rect>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <form action="" method="get" class="search-form">
+                                    <div class="uk-inline"><span uk-icon="thumbnails" class="uk-form-icon uk-icon"><svg
+                                                width="20" height="20" viewBox="0 0 20 20" data-svg="thumbnails">
+                                                <rect fill="none" stroke="#666" x="3.5" y="3.5" width="5" height="5">
+                                                </rect>
+                                                <rect fill="none" stroke="#666" x="11.5" y="3.5" width="5" height="5">
+                                                </rect>
+                                                <rect fill="none" stroke="#666" x="11.5" y="11.5" width="5" height="5">
+                                                </rect>
+                                                <rect fill="none" stroke="#666" x="3.5" y="11.5" width="5" height="5">
+                                                </rect>
+                                            </svg></span>
+                                        <input name="hailt" type="text" placeholder="Хайх"
+                                            class="uk-input uk-form-width-large">
+                                    </div>
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="display-flex float-right">
+                            <div class="item">
+                                <div class="text-blue">
+                                    <span class="fa fa-calendar"></span>
+                                    3.08
+                                </div>
+                                Зурхай
+                            </div>
+                            <div class="item">
+                                <div class="text-blue">
+                                    <span class="fa fa-cloud"></span> 7
+                                </div>
+                                Цаг агаар
+                            </div>
+                            <div class="item">
+                                <div class="text-blue">
+                                    2873 | $
+                                </div>
+                                Валютын ханш
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu" id="menu">
+                    <div class="menu-container">
+                        <div class="nav">
+                            <div class="nav-left">
+                                <ul class="menu-list">
+                                    <li class="active"><a href="#"><i class="fa fa-home "></i></a></li>
+                                    <li><a href="#">Улс төр</a></li>
+                                    <li><a href="#">Нийгэм</a></li>
+                                    <li><a href="#">Эрүүл мэнд</a></li>
+                                    <li><a href="#">Эдийн засаг</a></li>
+                                    <li><a href="#">Боловсрол</a></li>
+                                    <li><a href="#">Дэлхийд</a></li>
+                                    <li><a href="#">Спорт</a></li>
+                                    <li><a href="#">Соёл урлаг</a></li>
+                                    <li><a href="#" class="text-bold" style="color: #1e87f0;">GOGO cafe</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-right">
+                                <span><i class="fa fa-sort-down fa-2x text-blue"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden_menu">
+                        <div class="hidden_menu_container">
+                            <div class="">
+                                <div class="hidden-menu-title">Хэрэгтэй
+                                </div>
+                                <ul class="">
+                                    <li><a href="#">-
+                                            МЕГА ТӨСЛҮҮД</a></li>
+                                    <li><a href="#">-
+                                            Соёлын довтолгоо</a></li>
+                                    <li><a href="#">-
+                                            GOGO тойм</a></li>
+                                    <li><a href="#">-
+                                            Комик</a></li>
+                                    <li><a href="#">-
+                                            Зөвлөгөө</a></li>
+                                    <li><a href="#">-
+                                            КОВИД-19</a></li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <div class="hidden-menu-title">Ярилцлага
+                                </div>
+                                <ul class="">
+                                    <li><a href="#">-
+                                            Хүмүүс</a></li>
+                                    <li><a href="#">-
+                                            GoGo-ийн асуултууд</a></li>
+                                    <li><a href="#">-
+                                            СEO</a></li>
+                                    <li><a href="/i/21">-
+                                            GOGO cafe</a></li>
+                                    <li><a href="#">-
+                                            Хурц өнцөг</a></li>
+                                    <li><a href="#">-
+                                            Элчин сайд</a></li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <div class="hidden-menu-title">Сонирхолтой
+                                </div>
+                                <ul class="">
+                                    <li><a href="#">-
+                                            Гарааны бизнес</a></li>
+                                    <li><a href="#">-
+                                            Подкаст</a></li>
+                                    <li><a href="#">-
+                                            Бизнес</a></li>
+                                    <li><a href="#">-
+                                            Технологи</a></li>
+                                    <li><a href="#">-
+                                            Гэртээ тогооч</a></li>
+                                    <li><a href="#">-
+                                            Аялал</a></li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <div class="hidden-menu-title mb-3">Бусад
+                                </div>
+                                <div class="other">
+                                    <a href=""> English</a><br>
+                                    <a href="">Maamuu</a><br>
+                                    <a href="">Yolo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="featured_contents">
+            <div class="grid-container">
+                <div class="grid-item1">
+                    <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2022/03/291422-08032022-1646712996-1650124271-undarmaa_11.jpg" alt="">
+                    <div class="grid-item-title">
+
+                        <div class="display-flex">
+                            <div class="categoty_button">Соёл урлаг</div>
+                        </div>
+                        <h3>
+                            Жүжигчин Г.Ундармаа Соёлын гавьяат зүтгэлтэн боллоо
+                        </h3>
+                        <div class="display-flex">
+                            <div class="text-white">
+                                <i class="fa fa-heart"></i>1250
+                            </div>
+                            <div class="text-white">
+                                <i class="fa fa-comment"></i>5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2022/03/291388-07032022-1646609482-1410534801-IMG_05331.jpg" alt="">
+                    <div class="grid-item-title">
+                        <div class="display-flex">
+                            <div class="categoty_button">Хүмүүс</div>
+                        </div>
+                        <h3>
+                            "Илүүдэл жингүй Эртэч Монгол" аянд хамрагдаж буй иргэдийн биед гарсан өөрчлөлтийг хэмжинэ
+                        </h3>
+                        <div class="display-flex">
+                            <div class="text-white">
+                                <i class="fa fa-heart"></i>1250
+                            </div>
+                            <div class="text-white">
+                                <i class="fa fa-comment"></i>5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2022/03/291367-04032022-1646388557-1287969912-tses_durvuljin.jpg" alt="">
+                    <div class="grid-item-title">
+                        <div class="display-flex">
+                            <div class="categoty_button">Соёл урлаг</div>
+                        </div>
+                        <h3>
+                            Баярт мэдээ: Нэмэлт дата багцуудын үнэ буурч дата нэмэгдлээ
+                        </h3>
+                        <div class="display-flex">
+                            <div class="text-white">
+                                <i class="fa fa-heart"></i>1250
+                            </div>
+                            <div class="text-white">
+                                <i class="fa fa-comment"></i>5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://mgl.gogo.mn/newsn/thumbnail/600/images/c/2022/03/291432-08032022-1646718307-306356481-01.jpg" alt="">
+                    <div class="grid-item-title">
+                        <div class="display-flex">
+                            <div class="categoty_button">Соёл урлаг</div>
+                        </div>
+                        <h3>
+                            СУРВАЛЖИЛГА: “Монголчууд Хөвсгөл далайнхаа гайхамшгийг үзэж, хүртэх учиртай”
+                        </h3>
+                        <div class="display-flex">
+                            <div class="text-white">
+                                <i class="fa fa-heart"></i>1250
+                            </div>
+                            <div class="text-white">
+                                <i class="fa fa-comment"></i>5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://mgl.gogo.mn/newsn/thumbnail/600/np/2022/03/08/5177367/DSC07510-Edit-092905-1471781821.jpeg" alt="">
+                    <div class="grid-item-title">
+                        <div class="display-flex">
+                            <div class="categoty_button">Хүмүүс</div>
+                        </div>
+                        <h3>
+                            Б.Биндэръяа: АНУ-д эмээ, өвөө асардаг ажил хийж сургалтын төлбөрөө олоод хоёр дипломтой төгссөн
+                        </h3>
+                        <div class="display-flex">
+                            <div class="text-white">
+                                <i class="fa fa-heart"></i>1250
+                            </div>
+                            <div class="text-white">
+                                <i class="fa fa-comment"></i>5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="left">
+                <div class="display-flex">
+                    <div class="shine-medee">
+                        Өнөөдрийн шинэ мэдээ /03 сарын 08/ <i class="fa fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="news-items">
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="news-item">
+                            <div class="img">
+                                <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291431-08032022-1646713404-1027254448-badamtsetseg1.jpg">
+                            </div>
+                            <div class="uk-width-expand"><a href="">
+                                    <div class="category-text">Нийгэм</div>
+                                </a>
+                                <h4 class="title"> Нүүр, амны их эмч Б.Бадамцэцэгийг Хөдөлмөрийн хүндэт медалиар шагнав
+                                </h4>
+                                <p class="description">Олон Улсын Эмэгтэйчүүдийн эрхийг хамгаалах өдрийг тохиолдуулан
+                                    Ерөнхийлөгч
+                                    У.Хүрэлсүхтөрийн дээд, одон медаль гардуулж байна.</p>
+                                <div class="ab">
+                                    <div><a href="#" class="text-blue"><i class="fa fa-heart-o"></i> 4</a>
+                                    </div>
+                                    <div class="text-gray">&nbsp; &nbsp;&nbsp; · &nbsp;
+                                        <i class="fa fa-clock-o"></i>
+                                        5 минутын өмнө
+                                    </div>
+                                    <div class="text-gray"><a href="#" class="text-gray">
+                                            &nbsp; &nbsp;&nbsp; · &nbsp;
+                                            <i class="fa fa-edit"></i>
+                                            Г.Тэгшсүрэн</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="other-news">
+                        <div class="button">
+                            Бусад мэдээ <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="featured">
+                    <div class="head">
+                        <div class="text">
+                            Онцлох мэдээ
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-item-top">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/-08032022-1646719740-2051375315-netflix.jpg" alt="">
+                            <div class="right">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <h5>
+                            2022.03.08: Халдварын 189 тохиолдол бүртгэгдлээ
+                        </h5>
+                    </div>
+                    <div class="featured-item">
+                        <div class="featured-item-top">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/-08032022-1646719740-2051375315-netflix.jpg" alt="">
+                            <div class="right">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <h5>
+                            2022.03.08: Халдварын 189 тохиолдол бүртгэгдлээ
+                        </h5>
+                    </div>
+                </div>
+                <div class="trend">
+                    <div class="head">
+                        <div class="text">
+                            Тренд мэдээ
+                        </div>
+                    </div>
+                    <div class="trend-item">
+                        <div class="trend-num">
+                            1
+                        </div>
+                        <div class="trend-description">
+                            <p>
+                                А.Мөнхсувд: Цагдаагийн байгууллага мессежээр дуудлага авч, тусламж хэрэгтэй хүмүүсийн
+                                байршлыг тогтоодог болсон
+                            </p>
+                            <div class="display-flex">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart-o"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment-o"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/291415-07032022-1646644664-492759590-munhsuvd.jpg" alt="">
+                    </div>
+                    <div class="trend-item">
+                        <div class="trend-num">
+                            2
+                        </div>
+                        <div class="trend-description">
+                            <p>
+                                А.Мөнхсувд: Цагдаагийн байгууллага мессежээр дуудлага авч, тусламж хэрэгтэй хүмүүсийн
+                                байршлыг тогтоодог болсон
+                            </p>
+                            <div class="display-flex">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart-o"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment-o"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/291415-07032022-1646644664-492759590-munhsuvd.jpg" alt="">
+                    </div>
+                    <div class="trend-item">
+                        <div class="trend-num">
+                            3
+                        </div>
+                        <div class="trend-description">
+                            <p>
+                                А.Мөнхсувд: Цагдаагийн байгууллага мессежээр дуудлага авч, тусламж хэрэгтэй хүмүүсийн
+                                байршлыг тогтоодог болсон
+                            </p>
+                            <div class="display-flex">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart-o"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment-o"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/291415-07032022-1646644664-492759590-munhsuvd.jpg" alt="">
+                    </div>
+                    <div class="trend-item">
+                        <div class="trend-num">
+                            4
+                        </div>
+                        <div class="trend-description">
+                            <p>
+                                А.Мөнхсувд: Цагдаагийн байгууллага мессежээр дуудлага авч, тусламж хэрэгтэй хүмүүсийн
+                                байршлыг тогтоодог болсон
+                            </p>
+                            <div class="display-flex">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart-o"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment-o"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/291415-07032022-1646644664-492759590-munhsuvd.jpg" alt="">
+                    </div>
+                    <div class="trend-item">
+                        <div class="trend-num">
+                            5
+                        </div>
+                        <div class="trend-description">
+                            <p>
+                                А.Мөнхсувд: Цагдаагийн байгууллага мессежээр дуудлага авч, тусламж хэрэгтэй хүмүүсийн
+                                байршлыг тогтоодог болсон
+                            </p>
+                            <div class="display-flex">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart-o"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment-o"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/291415-07032022-1646644664-492759590-munhsuvd.jpg" alt="">
+                    </div>
+                    <div class="trend-item">
+                        <div class="trend-num">
+                            6
+                        </div>
+                        <div class="trend-description">
+                            <p>
+                                А.Мөнхсувд: Цагдаагийн байгууллага мессежээр дуудлага авч, тусламж хэрэгтэй хүмүүсийн
+                                байршлыг тогтоодог болсон
+                            </p>
+                            <div class="display-flex">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart-o"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment-o"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/291415-07032022-1646644664-492759590-munhsuvd.jpg" alt="">
+                    </div>
+                    <div class="trend-item">
+                        <div class="trend-num">
+                            7
+                        </div>
+                        <div class="trend-description">
+                            <p>
+                                А.Мөнхсувд: Цагдаагийн байгууллага мессежээр дуудлага авч, тусламж хэрэгтэй хүмүүсийн
+                                байршлыг тогтоодог болсон
+                            </p>
+                            <div class="display-flex">
+                                <div class="text-gray">
+                                    <i class="fa fa-heart-o"></i>1250
+                                </div>
+                                <div class="text-gray">
+                                    <i class="fa fa-comment-o"></i>5
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/291415-07032022-1646644664-492759590-munhsuvd.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-top">
+        <div class="footer-items">
+
+            <div class="footer-title">
+                <h4>Видео мэдээ <i class="fa fa-caret-right"></i></h4>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon1"><i class="fa fa-caret-right fa-2x"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon1"><i class="fa fa-caret-right fa-2x"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon1"><i class="fa fa-caret-right fa-2x"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon1"><i class="fa fa-caret-right fa-2x"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon1"><i class="fa fa-caret-right fa-2x"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-title photo-news">
+                <h4>Фото мэдээ <i class="fa fa-caret-right"></i></h4>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon"><i class="fa fa-camera"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon"><i class="fa fa-camera"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon"><i class="fa fa-camera"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon"><i class="fa fa-camera"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content-item">
+                    <div class="position-r">
+                        <img src="https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/291428-08032022-1646716828-520294636-hurelsuh1.jpg" alt="">
+                        <div class="icon"><i class="fa fa-camera"></i></div>
+                    </div>
+                    <h5 class="footer-item-title">Ерөнхийлөгч У.Хүрэлсүх төрийн дээд цол, одон медаль гардуулж байна
+                    </h5>
+                    <div class="display-flex">
+                        <div class="text-gray">
+                            <i class="fa fa-heart"></i>1250
+                        </div>
+                        <div class="text-gray">
+                            <i class="fa fa-comment"></i>5
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_a">
+            <div class="float-left">
+                <img src="https://mgl.gogo.mn/newsn/v3/images/gogo-logo.345096b3.png" alt="">
+            </div>
+            <div class="float-right">
+                <div class="footer-menu">
+                    <a href="#">Холбоо барих</a>
+                    <a href="#">СУРТАЛЧИЛГАА БАЙРШУУЛАХ</a>
+                    <a href="#">РЕДАКЦИЙН ЁС ЗҮЙ</a>
+                    <a href="#">НУУЦЛАЛЫН БОДЛОГО</a>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+
+            © 2007 -
+            2022
+            Mongol Content LLC
+
+        </div>
+    </footer>
+</body>
+
+<script>
+    window.onscroll = function () {
+        if (window.scrollY > 150) {
+            document.getElementById("menu").classList.add("position-fixed");
+        }
+
+        if (window.scrollY < 150) {
+
+            document.getElementById("menu").classList.remove("position-fixed");
+
+        };
+    }
+</script>
+
+</html>
